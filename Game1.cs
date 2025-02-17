@@ -11,7 +11,8 @@ public class Game1 : Game
     Rectangle? courtRectangle;
     Texture2D playerTexture;
     Vector2 playerPosition;
-    Vector2 playerOrigin;
+    float playerRotation;
+    float playerSpeed;
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
@@ -28,8 +29,9 @@ public class Game1 : Game
         courtPosition = new Vector2(90, 0);
         courtRectangle = new Rectangle(0, 27, 600, 500);
 
-        playerPosition = new Vector2(710, 260);
-        playerOrigin = new Vector2(0, 0);
+        playerPosition = new Vector2(710, _graphics.PreferredBackBufferHeight / 2);
+        playerRotation = 3.14f;
+        playerSpeed = 100f;
 
         base.Initialize();
     }
@@ -49,6 +51,47 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
+        float updatedPlayerSpeed = playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+        var kstate = Keyboard.GetState();
+
+        if (kstate.IsKeyDown(Keys.Up))
+        {
+            playerPosition.Y -= updatedPlayerSpeed;
+        }
+
+        if (kstate.IsKeyDown(Keys.Down))
+        {
+            playerPosition.Y += updatedPlayerSpeed;
+        }
+
+        if (kstate.IsKeyDown(Keys.Left))
+        {
+            playerPosition.X -= updatedPlayerSpeed;
+        }
+
+        if (kstate.IsKeyDown(Keys.Right))
+        {
+            playerPosition.X += updatedPlayerSpeed;
+        }
+
+        if (playerPosition.X > _graphics.PreferredBackBufferWidth - playerTexture.Width / 2)
+        {
+            playerPosition.X = _graphics.PreferredBackBufferWidth - playerTexture.Width / 2;
+        }
+        else if (playerPosition.X < playerTexture.Width / 2)
+        {
+            playerPosition.X = playerTexture.Width / 2;
+        }
+
+        if (playerPosition.Y > _graphics.PreferredBackBufferHeight - playerTexture.Height / 2)
+        {
+            playerPosition.Y = _graphics.PreferredBackBufferHeight - playerTexture.Height / 2;
+        }
+        else if (playerPosition.Y < playerTexture.Height / 2)
+        {
+            playerPosition.Y = playerTexture.Height / 2;
+        }
 
         base.Update(gameTime);
     }
@@ -60,7 +103,8 @@ public class Game1 : Game
         // TODO: Add your drawing code here
         _spriteBatch.Begin();
         _spriteBatch.Draw(courtTexture, courtPosition, courtRectangle, Color.White);
-        _spriteBatch.Draw(playerTexture, playerPosition, null, Color.White, 3.14f, playerOrigin, 1, SpriteEffects.None, 1);
+        _spriteBatch.Draw(playerTexture, playerPosition, null, Color.White, playerRotation,
+            new Vector2(playerTexture.Width / 2, playerTexture.Height / 2), 1, SpriteEffects.None, 0f);
         _spriteBatch.End();
 
         base.Draw(gameTime);
