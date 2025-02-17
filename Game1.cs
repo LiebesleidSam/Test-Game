@@ -9,6 +9,9 @@ public class Game1 : Game
     Texture2D courtTexture;
     Vector2 courtPosition;
     Rectangle? courtRectangle;
+    Texture2D playerTexture;
+    Vector2 playerPosition;
+    Vector2 playerOrigin;
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
@@ -25,6 +28,9 @@ public class Game1 : Game
         courtPosition = new Vector2(90, 0);
         courtRectangle = new Rectangle(0, 27, 600, 500);
 
+        playerPosition = new Vector2(710, 260);
+        playerOrigin = new Vector2(0, 0);
+
         base.Initialize();
     }
 
@@ -34,6 +40,7 @@ public class Game1 : Game
 
         // TODO: use this.Content to load your game content here
         courtTexture = Content.Load<Texture2D>("tennisCourt");
+        playerTexture = Content.Load<Texture2D>("playerCharacter");
     }
 
     protected override void Update(GameTime gameTime)
@@ -53,6 +60,7 @@ public class Game1 : Game
         // TODO: Add your drawing code here
         _spriteBatch.Begin();
         _spriteBatch.Draw(courtTexture, courtPosition, courtRectangle, Color.White);
+        _spriteBatch.Draw(playerTexture, playerPosition, null, Color.White, 3.14f, playerOrigin, 1, SpriteEffects.None, 1);
         _spriteBatch.End();
 
         base.Draw(gameTime);

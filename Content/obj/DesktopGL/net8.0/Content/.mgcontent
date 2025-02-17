@@ -4,13 +4,15 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/ball.png</File>
-    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/elements.png</File>
+    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/ball_tennis1.png</File>
+    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/characterBlue (1).png</File>
+    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/racket_metal.png</File>
     <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/tennisCourt.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
+    <File>ball.png</File>
+    <File>playerCharacter.png</File>
+    <File>racket.png</File>
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

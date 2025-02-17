@@ -25,5 +25,6 @@ c:\Users\Samuel Ruiz\MonoGameProjects\testProject\obj\Debug\net8.0\testProject.g
 c:\Users\Samuel Ruiz\MonoGameProjects\testProject\obj\Debug\net8.0\ref\testProject.dll
 c:\Users\Samuel Ruiz\MonoGameProjects\testProject\bin\Debug\net8.0\Content\ball.xnb
 c:\Users\Samuel Ruiz\MonoGameProjects\testProject\obj\Debug\net8.0\testProject.sourcelink.json
-c:\Users\Samuel Ruiz\MonoGameProjects\testProject\bin\Debug\net8.0\Content\elements.xnb
 c:\Users\Samuel Ruiz\MonoGameProjects\testProject\bin\Debug\net8.0\Content\tennisCourt.xnb
+c:\Users\Samuel Ruiz\MonoGameProjects\testProject\bin\Debug\net8.0\Content\playerCharacter.xnb
+c:\Users\Samuel Ruiz\MonoGameProjects\testProject\bin\Debug\net8.0\Content\racket.xnb
