@@ -5,8 +5,12 @@
   <Config />
   <SourceFiles>
     <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/ball.png</File>
+    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/elements.png</File>
+    <File>c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/tennisCourt.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

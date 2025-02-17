@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj": {}
+    "c:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj": {
+    "c:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj",
+        "projectUniqueName": "c:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj",
         "projectName": "testProject",
-        "projectPath": "C:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj",
+        "projectPath": "c:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\testProject.csproj",
         "packagesPath": "C:\\Users\\Samuel Ruiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\obj\\",
+        "outputPath": "c:\\Users\\Samuel Ruiz\\MonoGameProjects\\testProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samuel Ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config"

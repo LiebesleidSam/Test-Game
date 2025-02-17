@@ -1,2 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/ball.png","c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/bin/DesktopGL/Content/ball.xnb","TextureProcessor","Texture2DContent",8368,16469,0.1934915
+"c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/elements.png","c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/bin/DesktopGL/Content/elements.xnb","TextureProcessor","Texture2DContent",22891,1327189,0.2253262
+"c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/tennisCourt.png","c:/Users/Samuel Ruiz/MonoGameProjects/testProject/Content/bin/DesktopGL/Content/tennisCourt.xnb","TextureProcessor","Texture2DContent",21192,4014165,0.2171896
