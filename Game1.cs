@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -30,7 +31,6 @@ public class Game1 : Game
         courtRectangle = new Rectangle(0, 27, 600, 500);
 
         playerPosition = new Vector2(710, _graphics.PreferredBackBufferHeight / 2);
-        playerRotation = 3.14f;
         playerSpeed = 100f;
 
         base.Initialize();
@@ -54,6 +54,12 @@ public class Game1 : Game
         float updatedPlayerSpeed = playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
         var kstate = Keyboard.GetState();
+        var mstate = Mouse.GetState();
+        
+        var ydif = mstate.Y - playerPosition.Y;
+        var xdif = mstate.X - playerPosition.X;
+
+        playerRotation = (float)Math.Atan2(ydif, xdif);
 
         if (kstate.IsKeyDown(Keys.Up))
         {
